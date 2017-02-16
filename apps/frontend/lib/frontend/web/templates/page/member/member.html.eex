@@ -12,4 +12,9 @@
       <img src="<%= @member.profile.avatar_full %>"></img>
     </div>
   </div>
-</main>
+  <div class="row">
+    <div class="row twelve colums member-hl">
+      <%= gettext("Arma 3 Pelatut tunnit:") %>
+      # Doesn't work :/
+      <%= %Steamex.Profile.MostPlayedGame{game_icon: binary, game_link: nil, game_logo: binary, game_logo_small: nil, game_name: binary, hours_on_record: nil, hours_played: float, stats_name: binary } %>
+      <#%='http://api.steampowered.com/ISteamUserStats/GetGlobalStatsForGame/v0001/?format=json&appid=17740&count=1&name[0]=global.map.emp_isle' %>
